@@ -16,7 +16,7 @@
 title: 极云科技开发部
 description: > # this means to ignore newlines until "baseurl:"
   <a href="http://www.kingdee-cloud.cn/lxwm.html">极云科技</a> 开发部知识分享公开博客
-baseurl: "/"
+baseurl: "/999_KaiFaBuBlogs_01.001"
 url: "http://www.kingdee-cloud.cn"
 permalink: /:year/:month/:day/:title
 repository: ShawnTeoh/matjek
