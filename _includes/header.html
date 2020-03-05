@@ -29,7 +29,7 @@
     {% endif %}
     {% endfor %}
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/syntax.css">
-    <!-- <link rel="alternate" type="application/rss+xml" title="RSS" href="{{site.baseurl}}/feed.xml"> -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{site.baseurl}}/feed.xml">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="{{site.baseurl}}/sitemap.xml">
     {% seo title=false %}
   </head>
@@ -56,14 +56,11 @@
             <span class="white-text email">{{site.user_email}}</span>
           </div>
         </li>
-        <li><a class="waves-effect" href="{{site.baseurl}}/"><i class="material-icons">home</i>首页</a></li>
-        <!-- <li><a class="waves-effect" href="{{site.baseurl}}/projects"><i class="material-icons">description</i>项目</a></li> -->
-        <li><a class="waves-effect" href="{{site.baseurl}}/CloudBOS/"><i class="material-icons">description</i>Cloud BOS</a></li>
-        <li><a class="waves-effect" href="{{site.baseurl}}/categories"><i class="material-icons">description</i>数据库</a></li>
-        <li><a class="waves-effect" href="{{site.baseurl}}/tags"><i class="material-icons">description</i>Java</a></li>
-        <li><a class="waves-effect" href="{{site.baseurl}}/tags"><i class="material-icons">description</i>C#</a></li>
-        <li><a class="waves-effect" href="{{site.baseurl}}/tags"><i class="material-icons">description</i>Python</a></li>
-        <li><a class="waves-effect" href="{{site.baseurl}}/tags"><i class="material-icons">description</i>大前端</a></li>
+        <li><a class="waves-effect" href="{{site.baseurl}}/"><i class="material-icons">home</i>Home</a></li>
+        <li><a class="waves-effect" href="{{site.baseurl}}/projects"><i class="material-icons">description</i>Projects</a></li>
+        <li><a class="waves-effect" href="{{site.baseurl}}/categories"><i class="material-icons">sort</i>Categories</a></li>
+        <li><a class="waves-effect" href="{{site.baseurl}}/tags"><i class="material-icons">label</i>Tags</a></li>
+        <li><a class="waves-effect" href="{{site.baseurl}}/feed.xml" target="_blank"><i class="material-icons">rss_feed</i>RSS</a></li>
         <li><div class="divider"></div></li>
         <li><a class="waves-effect" href="{{site.baseurl}}/about"><i class="material-icons">person</i>About</a></li>
         <li><a class="waves-effect" href="{{site.baseurl}}/contact"><i class="material-icons">email</i>Contact</a></li>

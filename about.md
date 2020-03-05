@@ -1,1 +1,7 @@
-### 极云科技开发部知识共享博客
+---
+layout: page
+title: "About Me"
+css: ["about.css", "animate.css", "morphext.css"]
+js: ["morphext.min.js", "about.js"]
+---
+{% include about.html %}
