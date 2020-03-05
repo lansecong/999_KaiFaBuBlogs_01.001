@@ -6,7 +6,6 @@ tags:  zsc
 categories: CloudBOS
 ---
  
-### ShowMessage 用法总结
 * 界面弹出提示信息，提醒用户。
 * 方法 一
     * 参数说明
