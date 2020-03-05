@@ -1,6 +1,1 @@
----
-layout: page
-title: "Categories"
-css: ["categories.css"]
----
-{% include categories.html %}
+### 极云科技开发部知识共享博客
