@@ -6,7 +6,7 @@ tags:  zsc
 categories: CloudBOS
 ---
  
-#### DynamicObjectType动态实体类型，DynamicObject动态数据包，DynamicProperty动态属性说明
+###### DynamicObjectType动态实体类型，DynamicObject动态数据包，DynamicProperty动态属性说明
 1. 下面都使用简称，动态实体类型：实体类型；动态数据包：数据包；
 2. 实体类型是由动态属性构成的，动态属性来源于单据字段，动态属性中的属性也来源字段属性；          
 3. 动态属性的名称，默认值，类型等都是来源字段
@@ -15,7 +15,7 @@ categories: CloudBOS
 6. 数据包中的值都是有类型的，虽然显示的时候都是object，但在赋值的时候都会根据动态属性中的类型对值做验证。
 7. 单据只有一份元数据，只有一个实体类型，多份数据包；一个字段只有一个动态属性，多个值（不同单据值不一样）；
 
-#### 创建数据包
+###### 创建数据包
 1. 先创建实体类型，并注册动态属性，最后把实体类型作为参数创建动态数据包,FirstDynType也是数据包的名称
     ```
     DynamicObjectType objType = new DynamicObjectType("FirstDynType")
@@ -32,7 +32,7 @@ categories: CloudBOS
     DynamicObject dynData = new DynamicObject(objType);
     ```
 
-#### 得到数据包所有Key
+###### 得到数据包所有Key
 1. 可以看到名称为FirstDynType，数据项[{intProperty，0},{stringProperty,}]的数据包，但数据包并没有保存key，
     只是在显示的时候把两者结合起来了
 2. 数据包{intProperty，0}中intProperty来源动态属性名，0动态属性的默认值。
@@ -45,7 +45,7 @@ categories: CloudBOS
     }
     ```
 
-#### 数据包赋值
+###### 数据包赋值
 1. 有3种方式直接给数据包赋值，其实这3种方式都是通过找到实体类型中的动态属性，
       然后通过动态属性给其赋值，所以他们的本质都是一样的。intProperty.SetValue(dynData, 123);
 2. 动态属性又是怎样给数据包赋值的？动态属性中有个属性Ordinal，其实Ordinal就是数据包中的数组值得索引。
@@ -57,7 +57,7 @@ categories: CloudBOS
     intProperty.SetValue(dynData, 123); //动态属性给其赋值
     ```
 
-#### 数据包结构
+###### 数据包结构
 1. 简单项(名称+简单值)，复杂项（名称+数据包），集合项（名称+数据包集合）
 2. 一般字段都是简单项，有内码的实体数据包中的key都是“Id”,也是第一项。
 3. 基础资料字段包含一个以内码的简单项和以数据包的复杂项。
@@ -70,11 +70,11 @@ categories: CloudBOS
     objType.RegisterCollectionProperty("", secondObjType, objColl.GetType());//注册集合数据包
     ```
 
-#### 有必要去判断数据包是否包含key，或某值是什么类型？
+###### 有必要去判断数据包是否包含key，或某值是什么类型？
 1. 数据包中的key都是来源元数据中的字段名，所以单据中有的字段名，数据包一定是有的，除一些特殊字段，比如代理字段等，所以没有必要去判断。
 2. value的类型有必要去判断？也是没有必要的，在构建数据包时，类型都是根据字段固定好的。
 
-#### 常见错误
+###### 常见错误
 1. 实体类型{0}中不存在名为{1}的属性;
     * 这是因为实体类型中的动态属性没有名称为{0}的动态属性.比如：dynData["不存在的属性名"]，很可能是元数据跟代码版本不一致,或者打补丁后二开的字段丢失。
 2. 寻找实体上{0}对应的属性描述符失败，实体不存在此属性！[EntityType：{0} Propeyties:{1}];
