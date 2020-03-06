@@ -18,7 +18,9 @@ categories: Java
         }
     }
     ```
+
 * 第二步：创建定时的类， 加入注解@Component
+
     ```Java
     @Component
     public class TaskTest {    
@@ -29,7 +31,9 @@ categories: Java
     }
 
     ```
+
 * 例子
+
     ```Java 
     //执行完成后隔5000ms在执行
     @Scheduled(fixedDelay = 5000)
