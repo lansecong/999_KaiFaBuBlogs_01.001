@@ -8,7 +8,7 @@ categories: Java
 
 * 第一步：在Application中加入@EnableScheduling注解
 
-    ```Java
+    ```java
     @SpringBootApplication
     @EnableScheduling
     Public class RabbitmqApplication 
@@ -21,7 +21,7 @@ categories: Java
 
 * 第二步：创建定时的类， 加入注解@Component
 
-    ```Java
+    ```java
     @Component
     public class TaskTest {    
     @Scheduled(cron ="*/5 * * * * ?")    
@@ -34,7 +34,7 @@ categories: Java
 
 * 例子
 
-    ```Java 
+    ```java 
     //执行完成后隔5000ms在执行
     @Scheduled(fixedDelay = 5000)
     public void fixedDelayJob() throws InterruptedException {
