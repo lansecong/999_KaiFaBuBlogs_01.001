@@ -24,7 +24,7 @@ repository: ShawnTeoh/matjek
 paginate: 5
 
 # Build settings
-markdown: kramdown
+markdown: Markdown
 gems:
   - jekyll-feed
   - jekyll-paginate
