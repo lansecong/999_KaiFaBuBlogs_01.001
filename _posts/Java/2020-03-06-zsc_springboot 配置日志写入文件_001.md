@@ -31,5 +31,4 @@ categories: Java
 | logging.pattern.file              | FILE_LOG_PATTERN         | 日志文件中日志的模式     |
 | logging.pattern.level             | LOG_LEVEL_PATTERN        | 在渲染日志级别时的格式   |
 | PID                               | PID                      | 当前的进程ID             |
-|                                   |                          |                          |
 
