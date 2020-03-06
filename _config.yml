@@ -21,10 +21,11 @@ baseurl: "/"
 url: "https://blog.jiyunkeji.net"
 permalink: /:year/:month/:day/:title
 repository: ShawnTeoh/matjek
-paginate: 5
+paginate: 10
 
 # Build settings
-markdown: Markdown
+highlighter: rouge
+markdown: kramdown
 gems:
   - jekyll-feed
   - jekyll-paginate
