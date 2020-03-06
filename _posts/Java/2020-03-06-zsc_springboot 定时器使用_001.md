@@ -12,10 +12,10 @@ categories: Java
     @SpringBootApplication
     @EnableScheduling
     Public class RabbitmqApplication 
-    {   
-        public static void main(String[] args) {        
-            SpringApplication.run(RabbitmqApplication.class, args);   
-        }
+    {
+       public static void main(String[] args) {
+            SpringApplication.run(RabbitmqApplication.class, args);
+       }
     }
     ```
 
@@ -23,10 +23,10 @@ categories: Java
 
     ```java
     @Component
-    public class TaskTest {    
-    @Scheduled(cron ="*/5 * * * * ?")    
-    public void test() {        
-        System.out.println("a");    
+    public class TaskTest {
+    @Scheduled(cron ="*/5 * * * * ?")
+    public void test() {
+        System.out.println("a");
         }
     }
 
