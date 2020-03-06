@@ -7,7 +7,6 @@ categories: Java
 ---
 
 1. 如何将ResultSet的结果集转换为List
-
 	```java
 	sta = conn.createStatement();
 	rs = sta.executeQuery("select * from e_user");
