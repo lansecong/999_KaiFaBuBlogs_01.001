@@ -6,8 +6,8 @@ tags:  zsc
 categories: Java
 ---
 
-
 * 第一步：在Application中加入@EnableScheduling注解
+
     ```Java
     @SpringBootApplication
     @EnableScheduling
