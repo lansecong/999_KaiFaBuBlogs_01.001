@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   <a href="http://www.kingdee-cloud.cn/lxwm.html">极云科技</a> 开发部知识分享公开博客
 baseurl: "/"
 url: "https://blog.jiyunkeji.net"
-permalink: /:year/:month/:day/:title
+permalink: /:year/:month/:day/:tags/:title
 repository: ShawnTeoh/matjek
 paginate: 10
 
