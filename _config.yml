@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 极云科技知识分享公开博客
+title: 极云科技知识分享
 description: > # this means to ignore newlines until "baseurl:"
   <a href="http://www.kingdee-cloud.cn/lxwm.html">极云科技</a> 开发部知识分享公开博客
 baseurl: "/"
