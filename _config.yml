@@ -24,11 +24,7 @@ repository: lansecong/999_KaiFaBuBlogs_01.001
 paginate: 10
 
 # Build settings
-highlighter: rouge
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 gems:
   - jekyll-feed
   - jekyll-paginate
