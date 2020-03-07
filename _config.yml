@@ -22,6 +22,7 @@ url: "https://blog.jiyunkeji.net"
 permalink: /:year/:month/:day/:tags/:title
 repository: lansecong/999_KaiFaBuBlogs_01.001
 paginate: 10
+contact_url: "http://www.baidu.com"
 
 # Build settings
 highlighter: rouge
