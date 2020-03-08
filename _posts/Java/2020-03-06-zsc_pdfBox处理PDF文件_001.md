@@ -4,8 +4,7 @@ title:  "pdfBox处理PDF文件"
 date:   2020-03-07
 tags:  zsc
 categories: Java
-keywords: Java
-mathjax: true
+prism: [java, bash]
 ---
 
 * 将pdfBox引入项目
