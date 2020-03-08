@@ -46,8 +46,8 @@ plugins:
   - jemoji                                  # 解析 emoji
   - jekyll-sitemap                          # 自动生成 sitemap
   - jekyll-seo-tag                          # 自动 SEO 头信息生成
-#   - jekyll-html-pipeline                  #
-#   - jekyll-mentions                       # 用于 @github 用户
+  - jekyll-html-pipeline                  #
+  - jekyll-mentions                       # 用于 @github 用户
 collections:
   wiki:
     output          : true
