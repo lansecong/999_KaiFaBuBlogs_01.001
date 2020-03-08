@@ -25,10 +25,10 @@ github_username     : lansecong
 location            : TianJin, China
 email               : zhsc@kingdee-cloud.cn
 
-markdown: kramdown
+markdown            : kramdown
 kramdown:
-  input:  GFM
-  use_coderay: true
+  input             : GFM
+highlighter         : rouge
 paginate            : 12
 lsi                 : true
 quiet               : false
