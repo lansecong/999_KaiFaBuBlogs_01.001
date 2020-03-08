@@ -40,6 +40,7 @@ permalink           : /:year/:month/:day/:title.html    # 博文发布的 URL，
 plugins:
   - jekyll-github-metadata                  # github 元信息
   - rouge
+  - coderay
   - jekyll-octicons                         # 支持 octions 图标
   - jekyll-paginate                         # 分页
   - jekyll-feed                             # 自动生成 SSR 源
