@@ -21,7 +21,7 @@ categories: Java
 
   * 此处配置示例为163邮箱，如果使用QQ邮箱配置方式有所不同
 
-  ```java
+  ```properties
   #配置发送邮件相关信息
   spring.mail.host=smtp.163.com  //邮箱类型
   spring.mail.username=你的邮箱
