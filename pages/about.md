@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: 既然选择远方，便只顾风雨兼程。
+description: 人越学越觉得自己无知
 share: false
 comments: true
 canvas: true

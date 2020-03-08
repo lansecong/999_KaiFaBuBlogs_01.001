@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Categories
-description: 哈哈，你找到了我的文章基因库。
+description: 既然选择远方，便只顾风雨兼程。
 keywords: 分类
 comments: false
 share: false
