@@ -7,13 +7,14 @@ categories: CloudBOS
 ---
  
 * 界面弹出提示信息，提醒用户。
+
 * 方法 一
     * 参数说明
         * msg：提示信息
         * msgType：消息图标类型
     * 返回类型
         * 无返回值
-```
+```c#
 void ShowMessage(string msg, MessageBoxType msgType = MessageBoxType.Notice);
 ```
 
@@ -25,7 +26,7 @@ void ShowMessage(string msg, MessageBoxType msgType = MessageBoxType.Notice);
         * msgType：消息图标类型
     * 返回类型
         * 无返回值
-```
+```c#
 void ShowMessage(string msg, MessageBoxOptions options, string title = "", MessageBoxType msgType = MessageBoxType.Notice);
 ```
 * 方法 三
@@ -37,7 +38,7 @@ void ShowMessage(string msg, MessageBoxOptions options, string title = "", Messa
         * msgType：消息图标类型
     * 返回类型
         * 无
-```
+```c#
 void ShowMessage(string msg, MessageBoxOptions options,Action<MessageBoxResult> action, string title = "", MessageBoxType msgType = MessageBoxType.Notice);
 ```
 
@@ -48,7 +49,7 @@ void ShowMessage(string msg, MessageBoxOptions options,Action<MessageBoxResult> 
         * msgType：消息图标类型
     * 返回类型
         * 无
-```
+```c#
 void ShowMessage(Queue<MsgInnerInfo> qLinkButtionMsgInfo, string msg, MessageBoxType msgType = MessageBoxType.Notice);
 ```
 
@@ -61,7 +62,7 @@ void ShowMessage(Queue<MsgInnerInfo> qLinkButtionMsgInfo, string msg, MessageBox
         * msgType：消息图标类型
     * 返回类型
         * 无
-```
+```c#
 void ShowMessage(Queue<MsgInnerInfo> qLinkButtionMsgInfo, string msg, MessageBoxOptions options, string title = "", MessageBoxType msgType = MessageBoxType.Notice);
     ```
 
@@ -75,7 +76,7 @@ void ShowMessage(Queue<MsgInnerInfo> qLinkButtionMsgInfo, string msg, MessageBox
         * msgType：消息图标类型
     * 返回类型
         * 无
-```
+```c#
 void ShowMessage(Queue<MsgInnerInfo> qLinkButtionMsgInfo, string msg, MessageBoxOptions options, Action<MessageBoxResult> action, string title = "", MessageBoxType msgType = MessageBoxType.Notice);
 ```
 
