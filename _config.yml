@@ -26,9 +26,10 @@ location            : TianJin, China
 email               : zhsc@kingdee-cloud.cn
 
 markdown            : kramdown
-# kramdown:
-#   input             : GFM
-# highlighter         : rouge
+kramdown:
+  input             : GFM
+highlighter         : rouge
+
 paginate            : 12
 lsi                 : false
 quiet               : false
