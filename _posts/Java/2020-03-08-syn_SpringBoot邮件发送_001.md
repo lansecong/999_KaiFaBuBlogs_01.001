@@ -8,7 +8,9 @@ categories: Java
 
 1. 第一步：引入JavaMailSender
 
-	- 请注意：在引入JavaMailSender时，只能在带有@Component中引入。在其他静态类中引入会出现空指针报错。如果需要在静态类中引用，可以使用传值的方式将其传入需要使用的静态类中。
+	- ~~请注意：在引入JavaMailSender时，只能在带有@Component中引入。在其他静态类中引入会出现空指针报错。如果需要在静态类中引用，可以使用传值的方式将其传入需要使用的静态类中。~~
+	- 在使用@Autowired等注解的时候要添加@Component注解。
+	- 很多时候即使添加了@Component注解也无法获取。？？？？？
 	
 	```java
 	@Autowired
@@ -43,8 +45,8 @@ categories: Java
 	* 此处由于是在静态类中调用，故JavaMailSender是以参数的形式传过来的
 
 	```java
-//在类的上方加入@Component注解
-	    //发送富文件消息，可带附件
+	//在类的上方加入@Component注解
+	//发送富文件消息，可带附件
     public void send(String content,String receiver,JavaMailSender javaMailSender){
 	        //建立邮件消息
 	        MimeMessage mimeMailMessage=javaMailSender.createMimeMessage();
@@ -73,5 +75,4 @@ categories: Java
 
 ---
 
-[原文链接](https://www.cnblogs.com/itmyhome/p/4131284.html)
 
