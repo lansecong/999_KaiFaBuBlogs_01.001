@@ -8,22 +8,22 @@
 # Site Settings
 baseurl:
 # It will redirect your site to this url
-url                 : https://zoharyips.github.io
-title               : Zohar's blog
-name                : zohar's blog
-subtitle            : "Chinese by birth, Programmer by choice"
-description         : "The personal blog of zohar, a ascetic on the road to programming."
-repository          : zoharyips/zoharyips.github.io
-keywords            : zohar, zohar Yip, Zohar' Blog, 叶卓豪, zohar_Yip, zoharyips
+url                 : https://blog.jiyunkeji.net
+title               : 极云科技
+name                : 极云科技
+subtitle            : "极云科技分享社区"
+description         : "极云科技分享社区"
+repository          : lansecong/999_KaiFaBuBlogs_01.001
+keywords            : 极云科技, 天津极云科技有限公司, 极云科技开发部, 极云, 极云科技分享社区
 date_format         : "ordinal"
 timezone            : Asia/Shanghai
 encoding            : "utf-8"
 side_bar_repo_limit : 3
 
-author              : zohar
-github_username     : zoharyips
-location            : Guangzhou, China
-email               : zoharyips@outlook.com
+author              : lansecong
+github_username     : lansecong
+location            : TianJin, China
+email               : zhsc@kingdee-cloud.cn
 
 markdown            : kramdown
 kramdown:
@@ -34,7 +34,7 @@ lsi                 : false
 quiet               : false
 future              : true
 excerpt_separator   : "\n\n"                # 摘录的分隔符
-permalink           : /posts/:title.html    # 博文发布的 URL，伪静态
+permalink           : /:year/:month/:day/:title    # 博文发布的 URL，伪静态
 plugins:
   - jekyll-github-metadata                  # github 元信息
   - rouge
@@ -66,9 +66,9 @@ navs:
     href            : /categories/
     label           : 分类
 
-# -
-#   href            : /archives/
-#   label           : 归档
+  -
+  href            : /archives/
+  label           : 归档
 
   -
     href            : /wiki/
@@ -86,27 +86,27 @@ subscribe_rss       : /feed.xml
 
 # 评论模块
 # gitalk:
-#   owner             : zoharyips
-#   repo              : blog-comments
-#   clientID          : 4f7905fa91963e1cb585
-#   clientSecret      : 860aa59b9dac0ff81e468c3a67bec5a052e8b8ec
+#   owner             : 
+#   repo              : 
+#   clientID          : 
+#   clientSecret      : 
 
 # 站内搜索
 simple_jekyll_search:
-  fulltext          : false
+  fulltext          : true
 
 # leanCloud 访问统计
-leancloud:
-  enable: true
-  app_id: 7EiyLoiTRMpJGKx5Jyy6FV0S-gzGzoHsz
-  app_key: 0l02blBLDj6noCkLMoF76LD8
-  data_class_name: visited_times
-  ip_class_name: visiting_ip
+# leancloud:
+#   enable: true
+#   app_id: 7EiyLoiTRMpJGKx5Jyy6FV0S-gzGzoHsz
+#   app_key: 0l02blBLDj6noCkLMoF76LD8
+#   data_class_name: visited_times
+#   ip_class_name: visiting_ip
 
 # 谷歌分析
-google:
-  analytics_id      : UA-146513129-1
+# google:
+#   analytics_id      : UA-146513129-1
 
 # 备案号
-beian               : 粤ICP备18146252号-1
+beian               : 津ICP备14007082号 
 MIIT                : http://www.beian.miit.gov.cn
