@@ -21,16 +21,15 @@ categories: Java
 
 * 第二步：创建定时的类， 加入注解@Component
 
-```java
-@Component
-public class TaskTest {
-@Scheduled(cron ="*/5 * * * * ?")
-public void test() {
-    System.out.println("a");
+    ```java
+    @Component
+    public class TaskTest {
+    @Scheduled(cron ="*/5 * * * * ?")
+    public void test() {
+        System.out.println("a");
+        }
     }
-}
-
-```
+    ```
 
 * 例子
 
