@@ -6,7 +6,6 @@ tags:  zsc
 categories: Java
 keywords: Java
 mathjax: true
-prism: [java, bash]
 ---
 
 * 将pdfBox引入项目
