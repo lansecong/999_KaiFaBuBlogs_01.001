@@ -25,11 +25,11 @@ github_username     : lansecong
 location            : TianJin, China
 email               : zhsc@kingdee-cloud.cn
 
-highlighter: rouge
+highlighter: pygments
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
+  syntax_highlighter: pygments
 
 paginate            : 12
 lsi                 : true
