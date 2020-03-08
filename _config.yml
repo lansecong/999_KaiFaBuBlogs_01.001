@@ -27,9 +27,8 @@ email               : zhsc@kingdee-cloud.cn
 
 markdown: kramdown
 kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-highlighter: rouge
+  input:  GFM
+  use_coderay: true
 paginate            : 12
 lsi                 : true
 quiet               : false
