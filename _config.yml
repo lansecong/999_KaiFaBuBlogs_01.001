@@ -26,19 +26,19 @@ location            : TianJin, China
 email               : zhsc@kingdee-cloud.cn
 
 markdown            : kramdown
-# kramdown:
-#   input             : GFM
-# highlighter         : rouge
+kramdown:
+  input             : GFM
+highlighter         : rouge
 
 paginate            : 12
-lsi                 : false
+lsi                 : true
 quiet               : false
 future              : true
 excerpt_separator   : "\n\n"                # 摘录的分隔符
-permalink           : /:year/:month/:day/:title    # 博文发布的 URL，伪静态
+permalink           : /:year/:month/:day/:title.html    # 博文发布的 URL，伪静态
 plugins:
   - jekyll-github-metadata                  # github 元信息
-  # - rouge
+  - rouge
   - jekyll-octicons                         # 支持 octions 图标
   - jekyll-paginate                         # 分页
   - jekyll-feed                             # 自动生成 SSR 源
