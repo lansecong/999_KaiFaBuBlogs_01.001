@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SpringBoot 发送富文本邮件"
-date:   2020-03-06
+date:   2020-03-08
 tags:  syn
 categories: Java
 ---
