@@ -66,13 +66,13 @@ navs:
     href            : /categories/
     label           : 分类
 
-  # -
-  # href            : /archives/
-  # label           : 归档
-
   -
-    href            : /wiki/
-    label           : 维基
+    href            : /archives/
+    label           : 归档
+
+  # -
+  #   href            : /wiki/
+  #   label           : 维基
 
   -
     href            : /links/
