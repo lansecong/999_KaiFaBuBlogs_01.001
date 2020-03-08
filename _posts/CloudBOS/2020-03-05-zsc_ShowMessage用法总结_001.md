@@ -64,7 +64,7 @@ void ShowMessage(Queue<MsgInnerInfo> qLinkButtionMsgInfo, string msg, MessageBox
         * 无
 ```c#
 void ShowMessage(Queue<MsgInnerInfo> qLinkButtionMsgInfo, string msg, MessageBoxOptions options, string title = "", MessageBoxType msgType = MessageBoxType.Notice);
-    ```
+```
 
 * 方法 六
     * 参数说明
