@@ -77,25 +77,24 @@
 <script src="/assets/js/main.js"></script>
 
 <!-- 代码提示 -->
-<!-- <script src="https://cdn.bootcss.com/prism/0.0.1/prism.min.js"></script>
-<link rel="stylesheet" href="https://cdn.bootcss.com/prism/0.0.1/prism.min.css">
-<script src="/assets/vendor/prism/prism.js"></script>
-<link rel="stylesheet" href="/assets/vendor/prism/prism.css"> -->
-<!-- {% if page.prism %} -->
+<!-- <script src="https://cdn.bootcss.com/prism/0.0.1/prism.min.js"></script> -->
+<!-- <link rel="stylesheet" href="https://cdn.bootcss.com/prism/0.0.1/prism.min.css"> -->
+<!-- <script src="/assets/vendor/prism/prism.js"></script> -->
+<!-- <link rel="stylesheet" href="/assets/vendor/prism/prism.css"> -->
+{% if page.prism %}
   <script src="https://cdn.bootcss.com/prism/9000.0.1/prism.min.js"></script>
   <link rel="stylesheet" href="https://cdn.bootcss.com/prism/9000.0.1/themes/prism.min.css">
   <script src="https://cdn.bootcss.com/prism/9000.0.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
   <link rel="stylesheet" href="https://cdn.bootcss.com/prism/9000.0.1/plugins/line-numbers/prism-line-numbers.min.css">
   <script src="https://cdn.bootcss.com/prism/9000.0.1/plugins/show-language/prism-show-language.min.js"></script>
   <link rel="stylesheet" href="https://cdn.bootcss.com/prism/9000.0.1/plugins/show-language/prism-show-language.min.css">
-  <!-- {% for lang in page.prism %} -->
-    <!-- <script src="https://cdn.bootcss.com/prism/9000.0.1/components/prism-{{ lang }}.min.js"></script> -->
-    <script src="https://cdn.bootcss.com/prism/9000.0.1/components/prism-java.min.js"></script>
-  <!-- {% endfor %} -->
+  {% for lang in page.prism %}
+    <script src="https://cdn.bootcss.com/prism/9000.0.1/components/prism-{{ lang }}.min.js"></script>
+  {% endfor %}
   <script>
     $('pre').addClass("line-numbers").css('white-space', 'pre-line').css('padding', '1em 0px 22px 3em');
   </script>
-<!-- {% endif %} -->
+{% endif %}
 
 <!-- 动态创建 CANVAS 背景图 -->
 <script src="https://cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
@@ -133,10 +132,10 @@
 {% endif %}
 
 <!-- if the page enable mathjax, mathjax 脚本无法引入本地目录 -->
-<!-- {% if page.mathjax %} -->
+{% if page.mathjax %}
   <script src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <!-- <script type="text/javascript" src="https://basis-learning.github.io/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
-<!-- {% endif %} -->
+{% endif %}
 
 <!-- if the site enable google analytics 加载过慢 -->
 {% if site.google.analytics_id %}
