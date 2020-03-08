@@ -34,7 +34,9 @@ categories: Java
   spring.mail.properties.mail.smtp.auth=true
   spring.mail.properties.mail.smtp.starttls.enable=true
   spring.mail.properties.mail.smtp.starttls.required=true
+  # 这条语句什么意思？？？
   spring.mail.properties.mail.smtp.socketFactory.class=javax.net.ssl.SSLSocketFactory
+  # 为什么是465端口？？？
   spring.mail.properties.mail.smtp.port=465
   spring.mail.properties.mail.smtp.socketFactory.port=465
   ```
