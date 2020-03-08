@@ -8,9 +8,7 @@ categories: Java
 
 1. 第一步：引入JavaMailSender
 
-	- ~~请注意：在引入JavaMailSender时，只能在带有@Component中引入。在其他静态类中引入会出现空指针报错。如果需要在静态类中引用，可以使用传值的方式将其传入需要使用的静态类中。~~
-	- 在使用@Autowired等注解的时候要添加@Component注解。
-	- 很多时候即使添加了@Component注解也无法获取。？？？？？
+	- 请注意：在引入JavaMailSender时，由于使用了spring的自动装配（@Autowired注解），只能在最上层的类中引入。如果在被调用的工具类中引入会出现空指针错误（原因：使用new关键字创建的对象不受Spring容器管理，无法注入）
 	
 	```java
 	@Autowired
@@ -76,3 +74,8 @@ categories: Java
 
 
 
+------
+
+附：Spring中Autowired注解出现空指针异常的原因总结
+
+[原文链接](https://blog.csdn.net/yan3013216087/article/details/86680408?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task)
