@@ -1,6 +1,13 @@
+_site/
+.bundle/*
+vendor/*
+.vscode
+*.swp
+*.~vsd
+\#*\#
 *~
-*.gem
-.bundle
-.sass-cache
-_site
+.DS_Store
 Gemfile.lock
+desktop.ini
+sitemap.xml
+feed.xml

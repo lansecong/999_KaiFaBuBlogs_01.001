@@ -1,6 +1,4 @@
-source "https://rubygems.org"
-
-require 'json'
-require 'open-uri'
-versions = JSON.parse(open('https://pages.github.com/versions.json').read)
-gem 'github-pages', versions['github-pages'], group: :jekyll_plugins
+# the dependence of this jekyll project
+source 'https://gems.ruby-china.com'
+gem 'github-pages', '203', group: :jekyll_plugins
+gem 'jekyll-octicons'

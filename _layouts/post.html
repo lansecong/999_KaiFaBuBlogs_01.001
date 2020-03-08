@@ -1,59 +1,66 @@
 ---
 layout: default
-css: ["post.css"]
-js: ["post.js"]
+gotop: false
 ---
-<div id="post-info">
-  <h4>{{page.title}}</h4>
-  <ul class="collapsible hoverable" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header">
-        <span>
-          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Date">date_range</i>
-          {{page.date | date: "%d/%m/%Y %H:%M"}}
-          <i id="indicate" class="right material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Show extra info">info</i>
-        </span>
-      </div>
-      <div class="collapsible-body">
-        <span>
-          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Categories">sort</i>
-          {% for cat in page.categories %}
-          {% capture test %}{{cat | slice: 0}}{% endcapture %}
-          {% capture testup %}{{cat | slice: 0 | upcase}}{% endcapture %}
-          <a href="{{site.baseurl}}/categories#{{cat | slugify}}{% if test == testup %}_cap{% endif %}" target="_blank"><div class="chip">{{cat}}</div></a>
-          {% endfor %}
-        </span>
-        <span>
-          <i class="material-icons tooltipped" data-position="left" data-delay="30" data-tooltip="Tags">label</i>
-          {% for tag in page.tags %}
-          {% capture test %}{{tag | slice: 0}}{% endcapture %}
-          {% capture testup %}{{tag | slice: 0 | upcase}}{% endcapture %}
-          <a href="{{site.baseurl}}/tags#{{tag | slugify}}{% if test == testup %}_cap{% endif %}" target="_blank"><div class="chip">{{tag}}</div></a>
-          {% endfor %}
-        </span>
-      </div>
-    </li>
-  </ul>
+<!-- 文章显示页面 -->
+<div id="fixed_title" class="fix-title" hidden=true>
+  <h3 onclick="titleBackToTop()">{{ page.title }}</h3>
 </div>
-<div class="divider"></div>
-<div class="row">
-  <div class="col s12">
-    {{ content }}
+<section id="origin_title" class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15, ''}}">
+  <div class="container">
+    <div class="columns">
+      <div class="column three-fourths">
+        <div class="collection-title">
+          <h1 class="collection-header">{{ page.title }}</h1>
+        </div>
+        <div class="collection-info">
+          {% if page.modify %}
+            <span class="meta-info">
+              <span class="octicon octicon-pencil"></span>
+              {{ page.modify }}
+            </span>
+          {% endif %}
+          {% if page.date %}
+            <span class="meta-info">
+              <span class="octicon octicon-calendar"></span>
+              {{ page.date | date: "%Y/%m/%d" }}
+            </span>
+          {% endif %}
+          {% for cat in page.categories %}
+            <span class="meta-info">
+              <span class="octicon octicon-file-directory"></span>
+              <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+            </span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="/assets/js/fixed_title.js"></script>
+<!-- / .banner -->
+<section class="container content">
+<div class="columns">
+  <div class="column three-fourths" >
+    <article class="article-content markdown-body">
+      {{ content }}
+    </article>
+    <div class="poetry">
+      {% include poetry.html %}
+    </div>
+    <div class="share">
+      {% include sns-share.html %}
+    </div>
+    {% comment %}
+    <div class="comment">
+      {% include comments.html %}
+    </div>
+    {% endcomment %}
+  </div>
+  <div class="column one-fourth">
+    {% include sidebar-access-count.html %}
+    {% include sidebar-post-nav.html %}
   </div>
 </div>
-{% if site.disqus_shortname and page.comments %}
-<div id="disqus_thread"></div>
-<script>
-  var disqus_config = function () {
-    this.page.url = "{{site.url}}{{site.baseurl}}{{page.url}}";
-    this.page.identifier = "{{page.id}}";
-  };
-  (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = '//{{site.disqus_shortname}}.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
+</section>
+<!-- /section.content -->
