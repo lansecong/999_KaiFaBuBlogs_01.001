@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SqlServer触发器Tigger使用及示例"
-date:   2020-03-13 18:30:00
+date:   2020-03-13
 tags:  zsc
 categories: SqlServer
 ---
