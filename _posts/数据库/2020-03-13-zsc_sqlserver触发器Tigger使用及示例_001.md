@@ -33,7 +33,7 @@ SqlServer包括三种常规类型的触发器：DML触发器、DDL触发器和�
 		2. 防止恶意或者错误的insert、update和delete操作，并强制执行check约束定义的限制更为复杂的其他限制。
 		3. 评估数据修改前后表的状态，并根据该差异才去措施。
 	
-	* ![2020-03-13](../Images/zsc_2020-03-13.png)
+	* ![2020-03-13]({{site.url}}/images/posts/zsc_2020-03-13.png)
 
 2. DDL(数据定义语言,Data Definition Language)触发器
 
