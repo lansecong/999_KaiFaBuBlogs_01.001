@@ -9,12 +9,12 @@
 baseurl             : https://blog.jiyunkeji.net
 # It will redirect your site to this url
 url                 : https://blog.jiyunkeji.net
-title               : 极云科技
-name                : 极云科技
-subtitle            : "极云科技知识分享"
-description         : "极云科技知识分享"
+title               : 蓝色璁
+name                : 蓝色璁
+subtitle            : "蓝色璁"
+description         : "蓝色璁"
 repository          : lansecong/999_KaiFaBuBlogs_01.001
-keywords            : 极云科技, 天津极云科技有限公司, 极云科技开发部, 极云, 极云科技分享社区 ,极云科技知识分享
+keywords            : 蓝色璁 ,极云科技, 天津极云科技有限公司, 极云科技开发部, 极云, 极云科技分享社区 ,极云科技知识分享
 date_format         : "ordinal"
 timezone            : Asia/Shanghai
 encoding            : "utf-8"
