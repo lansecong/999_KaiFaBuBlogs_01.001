@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-baseurl             : https://blog.jiyunkeji.net
+baseurl             : https://lansecong.com
 # It will redirect your site to this url
-url                 : https://blog.jiyunkeji.net
+url                 : https://lansecong.com
 title               : 蓝色璁
 name                : 蓝色璁
 subtitle            : "蓝色璁"
