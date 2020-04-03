@@ -16,5 +16,7 @@ categories: Java
 
 *  在添加中文名附件时通过调用MimeUtility的encodeWord方法。
  ```java
+
  helper.addAttachment(MimeUtility.encodeWord("signature_" + fileNameTempList.get(0).getFileName(), "utf-8", "B"), item);
+ 
 ```
